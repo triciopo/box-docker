@@ -1,6 +1,9 @@
 name: Build and publish Docker images
 
-on: push
+on:
+  push:
+    paths:
+      - '**/Dockerfile'
 
 env:
   REGISTRY: ghcr.io
